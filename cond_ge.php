@@ -2,9 +2,12 @@
 <html>
 
 	<head>
-		<title>Conditions Générales</title>
+		<title>MissJune - vetements mode pour femme chic et tendance - Miss June</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Collection Miss-June, pret a porter tendance pour femme, glamour et fashion. Prêt-à-porter, accessoires, robes, jupes, gilets ...">
+		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/cond_ge.css">
-		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	</head>
 
 	<body ng-app="condApp">
@@ -27,8 +30,8 @@
 				<img src="img/conditions.jpg">
 			</div>
 
-			<form method="post" action="conditonsGeneralesCtrl.php" id="form">
-				<input type="checkbox" ng-model="checked" />
+			<form method="post" action="formAchat.php" id="form">
+				<input type="checkbox" ng-model="checked" name="check" required/>
 				<label>J'ai lu et j'accepte les conditions générales de vente.</label>
 			</form>
 			<p>En cochant cette case, vous confirmez que vous avez lu et accepté les conditions générales de vente.</p>

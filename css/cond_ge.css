@@ -1,8 +1,8 @@
 body{
 	margin: 0;
 	padding: 10px;
-	color: #222;
-	font-family: 'Oswald', sans-serif;
+	color: #484848;
+	font-family: 'Open Sans', sans-serif;
 }
 
 header{
@@ -21,8 +21,14 @@ header div{
 	padding: 2px 5px;
 	text-decoration: none;
 	color: #222;
-	font-weight: lighter;
-	background-color: #f5f5f5
+	font-weight: 100;
+	background-color: #f5f5f5;
+	opacity: 0.6;
+	transition: opacity 0.3s ease
+}
+
+#back-btn:hover{
+	opacity: 1
 }
 
 #valid-btn{
@@ -31,15 +37,19 @@ header div{
 	text-decoration: none;
 	color: #fff;
 	font-weight: lighter;
-	background-color: rgba(0,0,0,0.7);
+	background-color: #7a645e;
 	font-size: 1em;
 	outline: none;
 	outline-offset: 0;
 	cursor: pointer
 }
 
+hr{
+	opacity: 0.5
+}
+
 h1{
-	color: #e26500
+	color: #7a645e
 }
 .main{
 	display: flex;
@@ -54,7 +64,7 @@ h1{
 }
 
 #cond-container{
-	width: 95%;
+	width: 100%;
 	max-width: 800px;
 	align-self: center;
 	text-align: center;
@@ -72,8 +82,63 @@ form{
 	align-items: center;
 }
 
+label{
+	color: #7a645e;
+	cursor: text;
+}
+
 p{
 	text-align: center;
 	margin-top: 0;
 	font-size: 0.7em
+}
+
+input{
+	margin-right: 8px
+}
+
+@media all and (max-width: 500px){
+
+	body{
+		padding: 0 10px
+	}
+	header{
+		padding: 0 0 20px 0
+	}
+	.main{
+		padding: 20px 0;
+	}
+	h1{
+		font-size: 1.5em
+	}
+	#back-btn, #valid-btn{
+		font-size: 0.8em;
+	}
+	h2{
+		font-size: 1em
+	}
+	label{
+		font-size: 0.8em
+	}
+	p{
+		font-size: 0.6em
+	}
+
+}
+
+@media all and (max-width: 400px){
+
+	h1{
+		font-size: 1.3em
+	}
+	#back-btn, #valid-btn{
+		font-size: 0.7em;
+	}
+	label{
+		font-size: 0.7em
+	}
+	p{
+		font-size: 0.5em
+	}
+
 }
