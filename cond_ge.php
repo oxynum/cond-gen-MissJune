@@ -13,18 +13,20 @@
 	<body ng-app="condApp">
 
 		<header>
-			<h1>Confirmation de commande</h1>
-			<div>
-				<a href="#" id="back-btn">RETOUR AU PANIER</a>
-				<button type="submit" form="form" id="valid-btn" ng-disabled="!checked">VALIDER MA COMMANDE</button>
-			</div>
+			<a href="#" id="back-btn" class="hide">RETOUR AU PANIER</a>
+			<img src="img/logo.png" id="logo">
+			<button type="submit" form="form" id="valid-btn" ng-disabled="!checked" class="hide">VALIDER MA COMMANDE</button>
 		</header>
-
 		<hr>
 
 		<div class="main">
 			
-			<h2>Conditions Générales de Vente</h2>
+			<div id="btn-container">
+				<a href="#" id="back-btn">RETOUR AU PANIER</a>
+				<button type="submit" form="form" id="valid-btn" ng-disabled="!checked">VALIDER MA COMMANDE</button>
+			</div>
+
+			<h1>Conditions Générales de Vente</h1>
 
 			<div id="cond-container" class="scroll-y">
 				<img src="img/conditions.jpg">
@@ -43,7 +45,6 @@
 
 	<!-- Modules -->
 	<script src="js/condApp.js"></script>
-
 
 	</body>
 </html>
