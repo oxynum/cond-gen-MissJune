@@ -1,0 +1,24 @@
+{
+  "FR": {
+    "TITRE_PAGE": "MissJune - vêtements mode pour femme chic et tendance - Miss June",
+    "BOUTON_RETOUR": "RETOUR AU PANIER",
+    "BOUTON_VALIDER_COMMANDE": "VALIDER MA COMMANDE",
+    "TITRE_CONDITIONS_VENTE": "Conditions Générales de Vente",
+    "CONDITIONS_VENTE": "//A définir//",
+    "LU_ET_ACCEPT": "J'ai lu et j'accepte les conditions générales de vente.",
+    "EN_COCHANT_CASE": "En cochant cette case, vous confirmez que vous avez lu et accepté les conditions générales de vente.",
+    "H1_FORMACHAT": "Veuillez renseigner votre e-mail",
+    "CONFIRMER": "Confirmer"
+  },
+  "EN": {
+    "TITRE_PAGE": "MissJune - classy and trendy clothes for women - MissJune",
+    "BOUTON_RETOUR": "BACK TO CART",
+    "BOUTON_VALIDER_COMMANDE": "CONTINUE",
+    "TITRE_CONDITIONS_VENTE": "TERMES OF SALES",
+    "CONDITIONS_VENTE": "//A définir//",
+    "LU_ET_ACCEPT": "I have read and agree to the terms of sales.",
+    "EN_COCHANT_CASE": "By checking this box, you confirm that you have read and accepted the general terms of sales.",
+    "H1_FORMACHAT": "Enter your e-mail",
+    "CONFIRMER": "Confirm"
+  }
+}

@@ -33,12 +33,13 @@ if (isset($_POST['check']) && $_POST['check'] == true) {
 			
 			<h1>Veuillez renseigner votre e-mail</h1>
 
-			<form method="post" action="#">
+			<form>
 				<i class="fa fa-envelope-o" aria-hidden="true"></i>
 				<input type="text" name="mail" autofocus required spellcheck="false">
 				<button>Confirmer</button>
 			</form>
 		</div>
+
 	</body>
 	
 </html>
