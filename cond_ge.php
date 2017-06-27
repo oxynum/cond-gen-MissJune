@@ -8,25 +8,26 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/cond_ge.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	</head>
 
-	<body ng-app="condApp">
+	<body ng-app="condApp" ng-controller="langueCtrl">
 
 		<header>
-			<a href="#" id="back-btn" class="hide">RETOUR AU PANIER</a>
+			<a href="#" id="back-btn" class="hide">{{ text.BOUTON_RETOUR }}</a>
 			<img src="img/logo.png" id="logo">
-			<button type="submit" form="form" id="valid-btn" ng-disabled="!checked" class="hide">VALIDER MA COMMANDE</button>
+			<button type="submit" form="form" id="valid-btn" ng-disabled="!checked" class="hide">{{ text.BOUTON_VALIDER_COMMANDE }}</button>
 		</header>
 		<hr>
 
 		<div class="main">
 			
 			<div id="btn-container">
-				<a href="#" id="back-btn">RETOUR AU PANIER</a>
-				<button type="submit" form="form" id="valid-btn" ng-disabled="!checked">VALIDER MA COMMANDE</button>
+				<a href="#" id="back-btn">{{ text.BOUTON_RETOUR }}</a>
+				<button type="submit" form="form" id="valid-btn" ng-disabled="!checked">{{ text.BOUTON_VALIDER_COMMANDE }}</button>
 			</div>
 
-			<h1>Conditions Générales de Vente</h1>
+			<h1>{{ text.TITRE_CONDITIONS_VENTE }}</h1>
 
 			<div id="cond-container" class="scroll-y">
 				<img src="img/conditions.jpg">
@@ -34,17 +35,14 @@
 
 			<form method="post" action="formAchat.php" id="form">
 				<input type="checkbox" ng-model="checked" name="check" required/>
-				<label>J'ai lu et j'accepte les conditions générales de vente.</label>
+				<label>{{ text.LU_ET_ACCEPT }}</label>
 			</form>
-			<p>En cochant cette case, vous confirmez que vous avez lu et accepté les conditions générales de vente.</p>
+			<p>{{ text.EN_COCHANT_CASE }}</p>
 
 		</div>
 
-	<!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-
-	<!-- Modules -->
-	<script src="js/condApp.js"></script>
+	<!-- Controllers -->
+	<script src="js/controllers/langueCtrl.js"></script>
 
 	</body>
 </html>

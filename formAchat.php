@@ -17,29 +17,32 @@ if (isset($_POST['check']) && $_POST['check'] == true) {
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/formAchat.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	</head>
 
-	<body>
+	<body ng-app="condApp" ng-controller="langueCtrl">
 		<header>
 			<img src="img/logo.png" id="logo">
 		</header>
 		<hr>
 
 		<div id="btn-container">
-				<a href="#" id="back-btn">RETOUR AU PANIER</a>
+				<a href="#" id="back-btn">{{ text.BOUTON_RETOUR }}</a>
 		</div>
 
 		<div class="main">
 			
-			<h1>Veuillez renseigner votre e-mail</h1>
+			<h1>{{ text.H1_FORMACHAT }}</h1>
 
 			<form>
 				<i class="fa fa-envelope-o" aria-hidden="true"></i>
 				<input type="text" name="mail" autofocus required spellcheck="false">
-				<button>Confirmer</button>
+				<button>{{ text.CONFIRMER }}</button>
 			</form>
 		</div>
 
+		<!-- Controllers -->
+		<script src="js/controllers/langueCtrl.js"></script>
 	</body>
 	
 </html>
