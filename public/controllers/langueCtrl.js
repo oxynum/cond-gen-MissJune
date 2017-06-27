@@ -6,19 +6,21 @@ angular.module('condApp', [])
 
 		switch(lang){
 			case "en":
-				$http.get('js/controllers/langues.json').then(function(response){
+				$http.get('/controllers/langues.json').then(function(response){
 					$scope.text = response.data.EN;
 				});
 				break;
 			case "es":
-				$http.get('js/controllers/langues.json').then(function(response){
+				$http.get('/controllers/langues.json').then(function(response){
 					$scope.text = response.data.ES;
 				});
 				break;
 			default:
-				$http.get('js/controllers/langues.json').then(function(response){
+				$http.get('/controllers/langues.json').then(function(response){
 					$scope.text = response.data.FR;
 				});
 				break;
 		}
+
+		$scope.langue = lang;
 	}]);
