@@ -5,6 +5,10 @@ var mailjet = require ('node-mailjet')
 
 /**
 *
+* This function sends a mail to the client depending on his language.
+*
+* @param {String} langue : is the language of the user's browser
+* @param {String} adresse : is the mail adress that the user typed in the input
 *
 */
 function sendMail(langue, adresse) {

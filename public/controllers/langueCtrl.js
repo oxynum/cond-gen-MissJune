@@ -1,3 +1,9 @@
+/*
+*
+* This angular controller detects automatically the browser language and picks the appropriate texts in the langage.json file in order to make the pages multilingual
+*
+*/
+
 angular.module('condApp', [])
 
 	.controller('langueCtrl', ['$scope', '$http', '$window', function($scope, $http, $window){
