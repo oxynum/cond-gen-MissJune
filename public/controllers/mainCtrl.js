@@ -6,7 +6,7 @@
 
 angular.module('condApp', [])
 
-	.controller('langueCtrl', ['$scope', '$http', '$window', function($scope, $http, $window){
+	.controller('mainCtrl', ['$scope', '$http', '$window', function($scope, $http, $window){
 
 		var lang = $window.navigator.language || $window.navigator.userLanguage;
 

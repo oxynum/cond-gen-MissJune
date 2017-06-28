@@ -11,7 +11,38 @@ var mailjet = require ('node-mailjet')
 * @param {String} adresse : is the mail adress that the user typed in the input
 *
 */
-function sendMail(langue, adresse) {
+function sendMailMissJune(societe, nom, prenom, lieu, mail) {
+
+	var now 	= new Date(),
+		date 	= now.getDate()+'/'+(now.getMonth()+1)+'/'+now.getFullYear()+' à '+now.getHours()+'h'+now.getMinutes(),
+		subject = 'Un client a validé votre Reconnaissance de droits de propriété intellectuelle exclusifs',
+		html 	= '<strong>Société : </strong>'+societe+'</br><strong>Nom : </strong>'+nom+'</br><strong>Prénom : </strong>'+prenom+'</br><strong>Lieu : </strong>'+lieu+'</br><strong>Date : </strong>'+date+'</br><strong>E-mail : </strong>'+mail,
+		text 	= 'Société : '+societe+' / Nom : '+nom+' / Prénom : '+prenom+' / Lieu : '+lieu+' / Date : '+date+' / E-mail : '+mail;
+
+	var request = mailjet
+		.post("send")
+		.request({
+					"FromEmail": "gregoire@oxynum.fr",
+					"FromName": "GregRbs de MailJet",
+					"Subject": subject,
+					"Text-part": text,
+					"Html-part": html,
+					"Recipients": [
+							{
+								"Email": 'gregoire@oxynum.fr'
+							}
+					]});
+
+	request
+	    .then(result => {
+	        console.log(result.body)
+	    })
+	    .catch(err => {
+	        console.log(err.statusCode)
+	    });
+}
+
+function sendMailCustomer(langue, adresse) {
 	var subject="",
 		text ="",
 		html ="";
@@ -43,7 +74,7 @@ function sendMail(langue, adresse) {
 					"Html-part": html,
 					"Recipients": [
 							{
-								"Email": adresse
+								"Email": 'rabasse.greg@gmail.com'
 							}
 					]});
 
@@ -57,5 +88,6 @@ function sendMail(langue, adresse) {
 }
 
 module.exports = {
-	envoiMail : sendMail
+	sendMailMissJune : sendMailMissJune,
+	sendMailCustomer : sendMailCustomer
 };

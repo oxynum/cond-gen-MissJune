@@ -8,7 +8,7 @@ header{
 	padding: 5px 20px;
 	background-color: #f9f9f9;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -58,23 +58,22 @@ hr{
 h1{
 	color: #7a645e;
 }
-.main{
+.main, .infos{
 	display: flex;
 	flex-direction: column;
-	padding: 20px
+	padding: 50px 20px
 }
 
-.scroll-y{
-	overflow-y: auto;
-	max-height: 700px;
-	border-bottom: 1px solid #333;
+.infos{
+	align-items: center;
+	padding-bottom: 70px
 }
 
 #cond-container{
 	width: 100%;
 	max-width: 800px;
 	align-self: center;
-	text-align: center;
+	text-align: justify;
 }
 
 img{
@@ -89,12 +88,35 @@ form{
 	align-items: center;
 }
 
-label{
+#form-info{
+	flex-wrap: wrap;
+}
+#form-info > div{
+	padding: 20px
+}
+#form-info label{
+	display: inline-block;
+	width: 70px;
+	color: #7a645e;
+}
+#form-info input{
+	border:0;
+	border-bottom: 1px solid #7a645e;
+	outline-offset: 0;
+	outline: none;
+	font-size: 1.2em;
+	margin-right: 20px;
+	margin-left: 5px;
+	width: 300px;
+	font-weight: lighter;
+}
+
+#lu-accept{
 	color: #7a645e;
 	cursor: text;
 }
 
-p{
+#text-check-box{
 	text-align: center;
 	margin-top: 0;
 	font-size: 0.7em
@@ -102,6 +124,22 @@ p{
 
 input{
 	margin-right: 8px
+}
+
+button{
+	border: 1px solid #7a645e;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 1em;
+	padding: 1px 6px;
+	font-weight: lighter;
+	margin-top: 50px
+}
+
+button:hover{
+	color: white;
+	background-color: #7a645e
 }
 
 @media all and (max-width: 700px){
@@ -130,11 +168,15 @@ input{
 	#back-btn, #valid-btn{
 		font-size: 0.8em;
 	}
-	label{
+	#lu-accept{
 		font-size: 0.8em
 	}
-	p{
+	#text-check-box{
 		font-size: 0.6em
+	}
+
+	p, ul{
+		font-size: 0.7em
 	}
 
 }
@@ -147,13 +189,15 @@ input{
 	#back-btn, #valid-btn{
 		font-size: 0.7em;
 	}
-	label{
+	#lu-accept{
 		font-size: 0.7em
 	}
-	p{
+	#text-check-box{
 		font-size: 0.5em
 	}
-
+	#form-info input{
+	width: 300px;
+	}
 }
 
 @media all and (max-width: 1100px) and (min-height: 1300px){
@@ -169,10 +213,10 @@ input{
 	input{
 		padding: 10px
 	}
-	label{
+	#lu-accept{
 		font-size: 2em
 	}
-	p {
+	#text-check-box {
 		font-size: 1.4em
 	}
 	.scroll-y{

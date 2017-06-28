@@ -24,25 +24,21 @@ app.get('/', function(req, res) {
 
 
 /*
-* 	When the Terms of Sales formulary is posted, verifies that the customer has checked the box and shows him the formAchat.ejs page.
-*	If the box has not been checked, sends him back to the previous page.
-*/
-app.post('/formAchat', function(req, res){
-	if (req.body.check == 'on') {
-		res.render('formAchat');
-	}
-	else{
-		res.render('index');
-	}
-});
-
-/*
-*	When reaching /envoiMail, sends a mail in the appropriate language to the adress entered by the customer
+*	When reaching /envoiMail, sends an e-mail in the appropriate language to the customer in order to warn him that everything went well and an e-mail to MissJune saying that a customer checked their page.
 */
 app.post('/envoiMail', function(req, res) {
-	mail.envoiMail(req.body.langue, req.body.mail);
-	res.send('Un mail vous a été envoyé !')
+	if (checkValidRequest(req)) {
+		mail.sendMailMissJune(req.body.societe, req.body.nom, req.body.prenom, req.body.lieu, req.body.mail);
+		mail.sendMailCustomer(req.body.langue, req.body.mail);
+		res.send('Un mail a été envoyé !');
+	}
+	else {
+		res.send(checkValidRequest(req) +': '+req.body.check+' '+req.body.societe+req.body.nom+req.body.prenom+req.body.lieu+req.body.mail);
+	}
 });
 
+function checkValidRequest(req){
+	return(req.body.check === 'on' && req.body.societe!=='' && req.body.nom!=='' && req.body.prenom!=='' && req.body.lieu!=='' && req.body.mail!=='');
+}
 
 app.listen(3001);

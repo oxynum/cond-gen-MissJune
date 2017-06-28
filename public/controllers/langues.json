@@ -2,11 +2,11 @@
   "FR": {
     "BOUTON_RETOUR": "RETOUR AU PANIER",
     "BOUTON_VALIDER_COMMANDE": "VALIDER MA COMMANDE",
-    "TITRE_CONDITIONS_VENTE": "Conditions Générales de Vente",
+    "TITRE_CONDITIONS_VENTE": "Reconnaissance de droits de propriété intellectuelle exclusifs",
     "CONDITIONS_VENTE": "//A définir//",
     "LU_ET_ACCEPT": "J'ai lu et j'accepte les conditions générales de vente.",
     "EN_COCHANT_CASE": "En cochant cette case, vous confirmez que vous avez lu et accepté les conditions générales de vente.",
-    "H1_FORMACHAT": "Veuillez renseigner votre e-mail",
+    "H2_INFOS": "Vos informations personnelles",
     "CONFIRMER": "Confirmer"
   },
   "EN": {
@@ -16,7 +16,7 @@
     "CONDITIONS_VENTE": "//A définir//",
     "LU_ET_ACCEPT": "I have read and agree to the terms of sales.",
     "EN_COCHANT_CASE": "By checking this box, you confirm that you have read and accepted the general terms of sales.",
-    "H1_FORMACHAT": "Enter your e-mail",
+    "H2_INFOS": "Enter your e-mail",
     "CONFIRMER": "Confirm"
   },
   "ES": {
@@ -26,7 +26,7 @@
     "CONDITIONS_VENTE": "//A définir//",
     "LU_ET_ACCEPT": "He leído y acepto las condiciones generales de venta.",
     "EN_COCHANT_CASE": "Al marcar esta casilla, usted confirma que ha leído y acepta las condiciones generales de venta.",
-    "H1_FORMACHAT": "Por favor, introduzca su correo electrónico",
+    "H2_INFOS": "Por favor, introduzca su correo electrónico",
     "CONFIRMER": "CONFIRMAR"
   }
 }
