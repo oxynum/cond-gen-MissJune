@@ -9,29 +9,32 @@
 		<link rel="stylesheet" type="text/css" href="/css/remerciements.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	</head>
 
-	<body>
+	<body ng-app="condApp" ng-controller="mainCtrl">
 
-	<div id="main">
-		<div id="container">
+		<div id="main">
+			<div id="container">
 
-			<header>
-				<img src="/img/logo.png" id="logo">
-			</header>
-			<hr>
+				<header>
+					<img src="/img/logo.png" id="logo">
+				</header>
+				<hr>
 
-			<div id="remerciements">
-				<h1>Cher client,</h1>
-				<p>Nous vous remercions d'avoir signé notre déclaration de reconnaissance de droits de propriété intellectuelle exclusifs.</p>
-				<p>Vous recevrez sous peu un mail vous confirmant que votre signature a bien été prise en compte.</p>
-				<p class="right">Cordialement,</p>
-				<p class="right"><span class="main_color">L'équipe de MissJune</span></p>
-				<a id="retour_site" href="https://miss-june.com" class="main_color"><i class="fa fa-arrow-left" aria-hidden="true"></i> Retour au site</a>
+				<div id="remerciements">
+					<h1>{{ text.TITRE_REMERCIEMENTS }}</h1>
+					<p>{{ text.P1_REMERCIEMENTS }}</p>
+					<p>{{ text.P2_REMERCIEMENTS }}</p>
+					<p class="right">{{ text.P3_REMERCIEMENTS }}</p>
+					<p class="right"><span class="main_color">{{ text.SIGN_REMERCIEMENTS }}</span></p>
+					<a id="retour_site" href="https://miss-june.com" class="main_color"><i class="fa fa-arrow-left" aria-hidden="true"></i> {{ text.RETOUR_REMERCIEMENTS }}</a>
+				</div>
+
 			</div>
-
 		</div>
-	</div>
 
+	<!-- Controllers -->
+	<script src="/controllers/mainCtrl.js"></script>
 	</body>
 </html>

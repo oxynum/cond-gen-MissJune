@@ -5,22 +5,40 @@
     "LU_ET_ACCEPT": "Je reconnais avoir pris connaissance des conditions générales du contrat et les accepte.",
     "EN_COCHANT_CASE": "Cocher cette case vaut pour signature de la présente déclaration de reconnaissance de droits de propriété intellectuelle exclusifs.",
     "H2_INFOS": "Vos informations personnelles",
-    "CONFIRMER": "Confirmer"
+    "CONFIRMER": "Confirmer",
+    "TITRE_REMERCIEMENTS": "Cher client,",
+    "P1_REMERCIEMENTS": "Nous vous remercions d'avoir signé notre déclaration de reconnaissance de droits de propriété intellectuelle exclusifs.",
+    "P2_REMERCIEMENTS": "Vous recevrez sous peu un mail vous confirmant que votre signature a bien été prise en compte.",
+    "P3_REMERCIEMENTS": "Cordialement,",
+    "SIGN_REMERCIEMENTS": "L'équipe de MissJune",
+    "RETOUR_REMERCIEMENTS": "Retour au site"
   },
   "EN": {
-    "TITRE_CONDITIONS_VENTE": "TERMES OF SALES",
+    "TITRE_CONDITIONS_VENTE": "Recognition of exclusive intellectual property rights",
     "CONDITIONS_VENTE": "//A définir//",
-    "LU_ET_ACCEPT": "I have read and agree to the terms of sales.",
-    "EN_COCHANT_CASE": "By checking this box, you confirm that you have read and accepted the general terms of sales.",
-    "H2_INFOS": "Enter your e-mail",
-    "CONFIRMER": "Confirm"
+    "LU_ET_ACCEPT": "I accept and acknowledge the terms and conditions of this contract.",
+    "EN_COCHANT_CASE": "Checking this box counts as a signature. By checking it, you recognise to fully understand and accept the terms and conditions mentionned before.",
+    "H2_INFOS": "Your personnal informations",
+    "CONFIRMER": "Confirm",
+    "TITRE_REMERCIEMENTS": "Dear customer,",
+    "P1_REMERCIEMENTS": "Thank you for signing our recognition of exclusive intellectual property rights.",
+    "P2_REMERCIEMENTS": "You will receive an e-mail confirming that your signature has been registered as soon as possible.",
+    "P3_REMERCIEMENTS": "Best Regards,",
+    "SIGN_REMERCIEMENTS": "MissJune team.",
+    "RETOUR_REMERCIEMENTS": "Back to homepage"
   },
   "ES": {
-    "TITRE_CONDITIONS_VENTE": "CONDICIONES DE VENTA",
+    "TITRE_CONDITIONS_VENTE": "Reconocimiento de derechos exclusivos de propiedad intelectual",
     "CONDITIONS_VENTE": "//A définir//",
-    "LU_ET_ACCEPT": "He leído y acepto las condiciones generales de venta.",
-    "EN_COCHANT_CASE": "Al marcar esta casilla, usted confirma que ha leído y acepta las condiciones generales de venta.",
-    "H2_INFOS": "Por favor, introduzca su correo electrónico",
-    "CONFIRMER": "CONFIRMAR"
+    "LU_ET_ACCEPT": "Confirma que ha tomado nota de las condiciones generales del contracto y las accepto.",
+    "EN_COCHANT_CASE": "Marque esta casilla equivale a una firma de esta declaración de reconocimiento de los derechos exclusivos de propiedad intelectual.",
+    "H2_INFOS": "Su información personal",
+    "CONFIRMER": "Confirmar",
+    "TITRE_REMERCIEMENTS": "Querido cliente,",
+    "P1_REMERCIEMENTS": "Gracias por firmar nuestra declaración de reconocimiento de los derechos exclusivos de propiedad intelectual.",
+    "P2_REMERCIEMENTS": "Usted recibirá pronto un correo electrónico confirmando que su firma se ha tenido en cuenta.",
+    "P3_REMERCIEMENTS": "Atentamente,",
+    "SIGN_REMERCIEMENTS": "MissJune equipo.",
+    "RETOUR_REMERCIEMENTS": "Volver al sitio"
   }
 }

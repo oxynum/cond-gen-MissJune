@@ -49,14 +49,14 @@ function sendMailCustomer(langue, adresse) {
 
 	switch (langue){
 	case "es":
-		subject = 'Su pedido se ha tenido en cuenta';
-		text = '<h3>Querido cliente, gracias por su pedido.</h3><br/> Esto se ha tenido en cuenta y será enviado tan pronto como sea posible';
-		html = 'Querido cliente, gracias por su pedido. Esto se ha tenido en cuenta y será enviado tan pronto como sea posible';
+		subject = 'Su firma ha sido tomada en consideración bien';
+		text = 'Querido cliente, le agradecemos por haber firmado nuestra declaración de reconocimiento de derechos exclusivos de propiedad intelectual.';
+		html = '<strong>Querido cliente,</strong></br>Le agradecemos por haber firmado nuestra declaración de reconocimiento de derechos exclusivos de propiedad intelectual.</br></br>Usted puede recobrar nuestra declaración cuando usted lo desea haciendo clic <a href="https://miss-june.com/">aquí</a>.';
 		break;
 	case "en":
-		subject = 'Your order is getting ready';
-		text = 'Dear customer, thank you for your order. We will send it as soon as possible.';
-		html = '<h3>Dear customer, thank you for your order.</h3><br/>We will send it as soon as possible.';
+		subject = 'Your signature was successfuly registered';
+		text = 'Dear customer, thank you for signing our statement of recognition of exclusive intellectual property rights.';
+		html = '<strong>Dear customer,</strong></br>Thank you for signing our statement of recognition of exclusive intellectual property rights.</br></br>You can find our this document whenever you want just by clicking <a href="https://miss-june.com/">here</a>.';
 		break;
 	default:
 		subject = 'Votre signature a bien été prise en compte';
@@ -79,10 +79,10 @@ function sendMailCustomer(langue, adresse) {
 					]});
 
 	request
-	    .then(result => {
-	        console.log(result.body)
+	    .then(function(success){
+	        console.log(success.body)
 	    })
-	    .catch(err => {
+	    .catch(function(err) {
 	        console.log(err.statusCode)
 	    });
 }
