@@ -1,17 +1,13 @@
 {
   "FR": {
-    "BOUTON_RETOUR": "RETOUR AU PANIER",
-    "BOUTON_VALIDER_COMMANDE": "VALIDER MA COMMANDE",
     "TITRE_CONDITIONS_VENTE": "Reconnaissance de droits de propriété intellectuelle exclusifs",
     "CONDITIONS_VENTE": "//A définir//",
-    "LU_ET_ACCEPT": "J'ai lu et j'accepte les conditions générales de vente.",
-    "EN_COCHANT_CASE": "En cochant cette case, vous confirmez que vous avez lu et accepté les conditions générales de vente.",
+    "LU_ET_ACCEPT": "Je reconnais avoir pris connaissance des conditions générales du contrat et les accepte.",
+    "EN_COCHANT_CASE": "Cocher cette case vaut pour signature de la présente déclaration de reconnaissance de droits de propriété intellectuelle exclusifs.",
     "H2_INFOS": "Vos informations personnelles",
     "CONFIRMER": "Confirmer"
   },
   "EN": {
-    "BOUTON_RETOUR": "BACK TO CART",
-    "BOUTON_VALIDER_COMMANDE": "CONTINUE",
     "TITRE_CONDITIONS_VENTE": "TERMES OF SALES",
     "CONDITIONS_VENTE": "//A définir//",
     "LU_ET_ACCEPT": "I have read and agree to the terms of sales.",
@@ -20,8 +16,6 @@
     "CONFIRMER": "Confirm"
   },
   "ES": {
-    "BOUTON_RETOUR": "VOLVER AL CARRITO",
-    "BOUTON_VALIDER_COMMANDE": "CONTINUAR",
     "TITRE_CONDITIONS_VENTE": "CONDICIONES DE VENTA",
     "CONDITIONS_VENTE": "//A définir//",
     "LU_ET_ACCEPT": "He leído y acepto las condiciones generales de venta.",

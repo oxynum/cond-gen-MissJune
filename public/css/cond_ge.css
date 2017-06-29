@@ -58,13 +58,13 @@ hr{
 h1{
 	color: #7a645e;
 }
-.main, .infos{
+.main, #infos{
 	display: flex;
 	flex-direction: column;
 	padding: 50px 20px
 }
 
-.infos{
+#infos{
 	align-items: center;
 	padding-bottom: 70px
 }
@@ -196,7 +196,10 @@ button:hover{
 		font-size: 0.5em
 	}
 	#form-info input{
-	width: 300px;
+	width: 200px;
+	}
+	#infos h2{
+		font-size: 1.2em
 	}
 }
 
@@ -214,10 +217,10 @@ button:hover{
 		padding: 10px
 	}
 	#lu-accept{
-		font-size: 2em
+		font-size: 1.4em
 	}
 	#text-check-box {
-		font-size: 1.4em
+		font-size: 1.1em
 	}
 	.scroll-y{
 	max-height: 900px;

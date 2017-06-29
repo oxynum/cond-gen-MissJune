@@ -6,7 +6,7 @@
 
 angular.module('condApp', [])
 
-	.controller('mainCtrl', ['$scope', '$http', '$window', function($scope, $http, $window){
+	.controller('mainCtrl', ['$scope', '$http', '$window', '$location', '$anchorScroll', function($scope, $http, $window, $location, $anchorScroll){
 
 		var lang = $window.navigator.language || $window.navigator.userLanguage;
 
@@ -29,4 +29,10 @@ angular.module('condApp', [])
 		}
 
 		$scope.langue = lang;
+
+		$scope.goToFields = function(){
+								$location.hash('infos');
+								$anchorScroll();
+							};
+
 	}]);

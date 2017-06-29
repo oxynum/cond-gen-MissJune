@@ -39,37 +39,37 @@
 			</div>
 
 			<form method="post" action="/formAchat" id="form">
-				<input type="checkbox" ng-model="checked" name="check" required form="form-info" />
+				<input type="checkbox" ng-model="checked" name="check" required form="form-info" ng-click="goToFields()"/>
 				<label id="lu-accept">{{ text.LU_ET_ACCEPT }}</label>
 			</form>
 			<p id="text-check-box">{{ text.EN_COCHANT_CASE }}</p>
 
 		</div>
 
-		<div class="infos" ng-show="checked">
+		<div id="infos" ng-show="checked">
 			
 			<h2>{{ text.H2_INFOS }}</h2>
 
 			<form method="post" action="/envoiMail" id="form-info">
 				<div>
 					<Label>Société :</label>
-					<input type="text" name="societe" autofocus required spellcheck="false">
+					<input type="text" name="societe" required spellcheck="false">
 				</div>
 				<div>
 					<Label>Nom :</label>
-					<input type="text" name="nom" autofocus required spellcheck="false">
+					<input type="text" name="nom" required spellcheck="false">
 				</div>
 				<div>
 					<Label>Prénom :</label>
-					<input type="text" name="prenom" autofocus required spellcheck="false">
+					<input type="text" name="prenom" required spellcheck="false">
 				</div>
 				<div>
 					<Label>Lieu :</label>
-					<input type="text" name="lieu" autofocus required spellcheck="false">
+					<input type="text" name="lieu" required spellcheck="false">
 				</div>
 				<div>
 					<Label>E-mail :</label>
-					<input type="text" name="mail" autofocus required spellcheck="false">
+					<input type="text" name="mail" required spellcheck="false">
 				</div>
 				<input type="text" name="langue" value="{{ langue }}" style="display: none;">
 			</form>

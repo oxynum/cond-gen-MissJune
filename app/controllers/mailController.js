@@ -59,9 +59,9 @@ function sendMailCustomer(langue, adresse) {
 		html = '<h3>Dear customer, thank you for your order.</h3><br/>We will send it as soon as possible.';
 		break;
 	default:
-		subject = 'Votre commande a bien été prise en compte';
-		text = 'Cher client, merci pour votre commande. Celle-ci vous sera expédiée dans les plus brefs délais.';
-		html = '<h3>Cher client, merci pour votre commande.</h3><br/>Celle-ci vous sera expédiée dans les plus brefs délais.';
+		subject = 'Votre signature a bien été prise en compte';
+		text = 'Cher client, nous vous remercions d\'avoir signé notre déclaration de reconnaissance de droits de propriété intellectuelle exclusifs.';
+		html = '<strong>Cher client,</strong></br>Nous vous remercions d\'avoir signé notre déclaration de reconnaissance de droits de propriété intellectuelle exclusifs.</br></br>Vous pouvez retrouver notre déclaration quand vous le désirez en cliquant <a href="https://miss-june.com/">ici</a>.';
 	}
 
 	var request = mailjet
