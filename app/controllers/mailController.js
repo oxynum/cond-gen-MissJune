@@ -1,7 +1,7 @@
 'use strict';
 
 var mailjet = require ('node-mailjet')
-	.connect('84ff6bb884007b726e0233798d4d0382', '32bef8092196460441728f624dbfda4f');
+	.connect('45cc238a0e29dcb4800ad5f04105240e', 'af71fd0e654463cf195246acb92d202d');
 
 /**
 *
@@ -22,22 +22,22 @@ function sendMailMissJune(societe, nom, prenom, lieu, mail) {
 	var request = mailjet
 		.post("send")
 		.request({
-					"FromEmail": "gregoire@oxynum.fr",
-					"FromName": "GregRbs de MailJet",
+					"FromEmail": "stephanie.missjune@gmail.com",
+					"FromName": "Site web: MissJune",
 					"Subject": subject,
 					"Text-part": text,
 					"Html-part": html,
 					"Recipients": [
 							{
-								"Email": 'gregoire@oxynum.fr'
+								"Email": 'stephanie.missjune@gmail.com'
 							}
 					]});
 
 	request
-	    .then(result => {
-	        console.log(result.body)
+	    .then(function(success){
+	        console.log(success.body)
 	    })
-	    .catch(err => {
+	    .catch(function(err) {
 	        console.log(err.statusCode)
 	    });
 }
@@ -67,14 +67,14 @@ function sendMailCustomer(langue, adresse) {
 	var request = mailjet
 		.post("send")
 		.request({
-					"FromEmail": "gregoire@oxynum.fr",
-					"FromName": "GregRbs de MailJet",
+					"FromEmail": "stephanie.missjune@gmail.com",
+					"FromName": "MissJune",
 					"Subject": subject,
 					"Text-part": text,
 					"Html-part": html,
 					"Recipients": [
 							{
-								"Email": 'rabasse.greg@gmail.com'
+								"Email": adresse
 							}
 					]});
 
