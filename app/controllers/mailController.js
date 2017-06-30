@@ -49,7 +49,7 @@ function sendMailCustomer(langue, adresse) {
 
 	switch (langue){
 	case "es":
-		subject = 'Su firma ha sido tomada en consideración bien';
+		subject = 'Su firma ha sido registrado';
 		text = 'Querido cliente, le agradecemos por haber firmado nuestra declaración de reconocimiento de derechos exclusivos de propiedad intelectual.';
 		html = '<strong>Querido cliente,</strong></br>Le agradecemos por haber firmado nuestra declaración de reconocimiento de derechos exclusivos de propiedad intelectual.</br></br>Usted puede recobrar nuestra declaración cuando usted lo desea haciendo clic <a href="https://miss-june.com/">aquí</a>.';
 		break;

@@ -30,6 +30,7 @@ angular.module('condApp', [])
 
 		$scope.langue = lang;
 
+		/* Enables the scroll to the fields when the user clicks on the check box */
 		$scope.goToFields = function(){
 								$location.hash('infos');
 								$anchorScroll();
