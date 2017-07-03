@@ -13,41 +13,8 @@ header{
 }
 
 #logo{
-	max-height: 90px
-}
-
-#btn-container{
-	display: none;
-	justify-content: space-between;
-	align-items: center;
-}
-
-#back-btn{
-	border: 1px solid #222;
-	padding: 2px 5px;
-	text-decoration: none;
-	color: #222;
-	font-weight: lighter;
-	background-color: #f5f5f5;
-	opacity: 0.6;
-	transition: opacity 0.3s ease
-}
-
-#back-btn:hover{
-	opacity: 1
-}
-
-#valid-btn{
-	border: 1px solid #fff;
-	padding: 5px 8px;
-	text-decoration: none;
-	color: #fff;
-	font-weight: lighter;
-	background-color: #7a645e;
-	font-size: 1em;
-	outline: none;
-	outline-offset: 0;
-	cursor: pointer
+	max-height: 90px;
+	max-width: 100%
 }
 
 hr{
@@ -55,10 +22,24 @@ hr{
 	margin: 0
 }
 
+#cover{
+	height: 70vh;
+	min-height: 500px;
+	background: url("../img/cover.jpg") center;
+	background-size: cover;
+}
+
 h1{
 	color: #7a645e;
+	margin: 1em 20px
 }
-.main, #infos{
+.main{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 50px
+}
+
+#infos{
 	display: flex;
 	flex-direction: column;
 	padding: 50px 20px
@@ -74,15 +55,14 @@ h1{
 	max-width: 800px;
 	align-self: center;
 	text-align: justify;
-}
-
-img{
-	max-width: 100%
+	padding: 0 20px;
+	box-sizing: border-box;
 }
 
 form{
 	margin: 20px 0;
 	margin-bottom: 0;
+	padding: 0 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -96,7 +76,7 @@ form{
 }
 #form-info label{
 	display: inline-block;
-	width: 70px;
+	width: 80px;
 	color: #7a645e;
 }
 #form-info input{
@@ -119,7 +99,8 @@ form{
 #text-check-box{
 	text-align: center;
 	margin-top: 0;
-	font-size: 0.7em
+	font-size: 0.7em;
+	padding: 0 20px;
 }
 
 input{
@@ -143,11 +124,8 @@ button:hover{
 }
 
 @media all and (max-width: 700px){
-	.hide{
-		display: none;
-	}
-	#btn-container{
-		display: flex;
+	#cover{
+		height: 500px
 	}
 	header{
 		justify-content: center;
@@ -159,8 +137,12 @@ button:hover{
 	header{
 		padding: 5px
 	}
-	.main{
-		padding: 20px 5px;
+	#logo{
+		max-height: 50px
+	}
+	#cover{
+		height: 350px;
+		min-height: 0
 	}
 	h1{
 		font-size: 1.4em
@@ -186,8 +168,8 @@ button:hover{
 	h1{
 		font-size: 1.1em
 	}
-	#back-btn, #valid-btn{
-		font-size: 0.7em;
+	#cover{
+		height: 250px;
 	}
 	#lu-accept{
 		font-size: 0.7em
@@ -207,8 +189,8 @@ button:hover{
 	#logo{
 		max-height: 170px
 	}
-	#back-btn, #valid-btn{
-		font-size: 1.5em;
+	#cover{
+		height: 800px
 	}
 	h1{
 		font-size: 2.5em
